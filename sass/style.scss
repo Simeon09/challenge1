@@ -6,13 +6,18 @@ background-color:  hsl(213, 19%, 18%);
 display: grid;
 //position: relative;
  //top: 30px;
-border-radius: 10px;
+border-radius: 20px;
 //  margin-left: 1vw;
 //  margin-right: 1vw;
 width: 300px;
-margin-top: 50%;
-
-
+margin: auto;
+margin-top: 170px;
+@media screen and (max-width:310px){
+    width: 250px;
+}
+.change{
+    background-color: red;
+}
 .icon{
     background-color:   hsl(240, 2%, 30%);
     margin-top: 20px;
@@ -28,6 +33,7 @@ h3{
     color: hsl(0, 0%, 100%);
     margin-left: 20px;
     margin-right: 20px;
+    font-weight: 700;
     
     
 }
@@ -44,12 +50,16 @@ p{
 span{
     display: flex;
     justify-content: space-around;
-    label{
+    button{
         background-color: hsl(240, 2%, 30%);
-        width: 20px;
+        width: 37px;
         padding: 10px;
         text-align: center;
-        border-radius: 100%;
+        border-radius: 450%;
+        outline: none;
+        border: none;
+        color: hsl(216, 12%, 54%);
+        font-family: Overpass;
     }
     margin-left: 15px;
     margin-right: 20px;
@@ -72,7 +82,55 @@ padding-top: 20px;
         margin-bottom: 20px;
         border-radius: 30px;
         color:hsl(0, 0%, 100%) ;
-       
+        font-family: Overpass;
+        font-weight: 400;
+       &:hover{
+           background-color:hsl(0, 0%, 100%) ; 
+           color:hsl(25, 97%, 53%); ;
+       }
     }
 }
+}
+.thankYou{
+    width: 300px;
+    background-color:  hsl(213, 19%, 18%);
+    text-align: center;
+    margin: auto;
+    margin-top: 170px;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @media screen and (max-width:310px){
+        width: 250px;
+    }
+    p:last-child{
+        color: hsl(216, 12%, 54%); 
+        font-family: Overpass;
+        font-weight: 400;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        font-size: 15px;
+    }
+   .select{
+       background-color:hsl(240, 2%, 30%); 
+      
+      width: 180px;
+      display: inline-block;
+     // justify-content: center;
+      margin-top: 20px;
+      //margin: auto;
+      font-family: Overpass;
+      color:hsl(25, 97%, 53%); 
+      padding-top: 3px;
+      padding-bottom: 3px;
+      border-radius: 20px;
+      font-size: 15px;
+   }
+   h2{
+       color:hsl(0, 0%, 100%);
+       margin: 0px;
+       font-family: Overpass;
+       font-weight: 700;
+   }
 }

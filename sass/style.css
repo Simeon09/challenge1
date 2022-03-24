@@ -6,9 +6,20 @@ body {
   background-color: #252d37;
   display: -ms-grid;
   display: grid;
-  border-radius: 10px;
+  border-radius: 20px;
   width: 300px;
-  margin-top: 50%;
+  margin: auto;
+  margin-top: 170px;
+}
+
+@media screen and (max-width: 310px) {
+  .rating {
+    width: 250px;
+  }
+}
+
+.rating .change {
+  background-color: red;
 }
 
 .rating .icon {
@@ -27,6 +38,7 @@ body {
   color: white;
   margin-left: 20px;
   margin-right: 20px;
+  font-weight: 700;
 }
 
 .rating p {
@@ -49,12 +61,16 @@ body {
   margin-right: 20px;
 }
 
-.rating span label {
+.rating span button {
   background-color: #4b4b4e;
-  width: 20px;
+  width: 37px;
   padding: 10px;
   text-align: center;
-  border-radius: 100%;
+  border-radius: 450%;
+  outline: none;
+  border: none;
+  color: #7c8798;
+  font-family: Overpass;
 }
 
 .rating .btn {
@@ -80,5 +96,59 @@ body {
   margin-bottom: 20px;
   border-radius: 30px;
   color: white;
+  font-family: Overpass;
+  font-weight: 400;
+}
+
+.rating .btn button:hover {
+  background-color: white;
+  color: #fb7413;
+}
+
+.thankYou {
+  width: 300px;
+  background-color: #252d37;
+  text-align: center;
+  margin: auto;
+  margin-top: 170px;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 310px) {
+  .thankYou {
+    width: 250px;
+  }
+}
+
+.thankYou p:last-child {
+  color: #7c8798;
+  font-family: Overpass;
+  font-weight: 400;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.thankYou .select {
+  background-color: #4b4b4e;
+  width: 180px;
+  display: inline-block;
+  margin-top: 20px;
+  font-family: Overpass;
+  color: #fb7413;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 20px;
+  font-size: 15px;
+}
+
+.thankYou h2 {
+  color: white;
+  margin: 0px;
+  font-family: Overpass;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
