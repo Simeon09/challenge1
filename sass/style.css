@@ -1,0 +1,84 @@
+body {
+  background-color: #121417;
+}
+
+.rating {
+  background-color: #252d37;
+  display: -ms-grid;
+  display: grid;
+  border-radius: 10px;
+  width: 300px;
+  margin-top: 50%;
+}
+
+.rating .icon {
+  background-color: #4b4b4e;
+  margin-top: 20px;
+  border-radius: 50%;
+  width: 20px;
+  padding: 5px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.rating h3 {
+  font-family: Overpass;
+  font-size: 20px;
+  color: white;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.rating p {
+  font-family: Overpass;
+  font-size: 15px;
+  color: #7c8798;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.rating span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.rating span label {
+  background-color: #4b4b4e;
+  width: 20px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.rating .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  padding-top: 20px;
+}
+
+.rating .btn button {
+  background-color: #fb7413;
+  outline: none;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

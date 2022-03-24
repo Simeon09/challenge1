@@ -1,0 +1,78 @@
+body{
+   background-color:  hsl(216, 12%, 8%);
+}
+.rating{
+background-color:  hsl(213, 19%, 18%);
+display: grid;
+//position: relative;
+ //top: 30px;
+border-radius: 10px;
+//  margin-left: 1vw;
+//  margin-right: 1vw;
+width: 300px;
+margin-top: 50%;
+
+
+.icon{
+    background-color:   hsl(240, 2%, 30%);
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 20px;
+    padding: 5px;
+    margin-left: 20px;
+    text-align: center;
+}
+h3{
+    font-family: Overpass;
+    font-size:20px;
+    color: hsl(0, 0%, 100%);
+    margin-left: 20px;
+    margin-right: 20px;
+    
+    
+}
+p{
+    font-family: Overpass;
+    font-size:15px;
+    color: hsl(216, 12%, 54%);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 0px;
+    margin-top: 0px;
+    
+}
+span{
+    display: flex;
+    justify-content: space-around;
+    label{
+        background-color: hsl(240, 2%, 30%);
+        width: 20px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 100%;
+    }
+    margin-left: 15px;
+    margin-right: 20px;
+}
+.btn{
+    display: flex;
+    justify-self: center;
+padding-top: 20px;
+
+    button{
+        background-color: hsl(25, 97%, 53%);
+        outline: none;
+        border: none;
+        display: flex;
+        justify-self: center;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        border-radius: 30px;
+        color:hsl(0, 0%, 100%) ;
+       
+    }
+}
+}
