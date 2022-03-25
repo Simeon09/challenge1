@@ -99,7 +99,18 @@ body {
       font-weight: 400;
       &:hover {
         background-color: hsl(0, 0%, 100%);
-        color: hsl(25, 97%, 53%);
+        a{
+          color: hsl(25, 97%, 53%);
+        }
+
+      }
+      a{
+        text-decoration: none;
+        font-family: Overpass;
+        font-weight: 700;
+        font-size: 15px;
+        color:hsl(0, 0%, 100%); 
+       
       }
     }
   }

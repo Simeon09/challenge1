@@ -116,7 +116,18 @@ body .rating .btn button {
 
 body .rating .btn button:hover {
   background-color: white;
+}
+
+body .rating .btn button:hover a {
   color: #fb7413;
+}
+
+body .rating .btn button a {
+  text-decoration: none;
+  font-family: Overpass;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
 }
 
 body .thankYou {
