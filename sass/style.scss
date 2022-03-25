@@ -70,8 +70,11 @@ body {
       border: none;
       color: hsl(0, 0%, 100%);
       font-family: Overpass;
-      &:hover{
-        background-color: hsl(25, 97%, 53%);
+      @media screen  and (min-width:900px){
+        
+        &:hover{
+          background-color: hsl(25, 97%, 53%);
+        }
       }
     }
     margin-left: 15px;

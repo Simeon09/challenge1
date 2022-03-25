@@ -83,8 +83,10 @@ body .rating span button {
   font-family: Overpass;
 }
 
-body .rating span button:hover {
-  background-color: #fb7413;
+@media screen and (min-width: 900px) {
+  body .rating span button:hover {
+    background-color: #fb7413;
+  }
 }
 
 body .rating .btn {
