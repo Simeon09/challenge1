@@ -20,42 +20,52 @@ for(b in buttons) {
 }
 */
 
-function btn1_f(){
-    btn1.classList.add('change')
-    btn2.classList.remove('change')
-    btn3.classList.remove('change')
-    btn4.classList.remove('change')
-    btn5.classList.remove('change')
+function btn1_f() {
+  btn1.classList.add("change");
+  btn2.classList.remove("change");
+  btn3.classList.remove("change");
+  btn4.classList.remove("change");
+  btn5.classList.remove("change");
+  localStorage.setItem("rank", "1")
 }
 
-function btn2_f(){
-    btn1.classList.remove('change')
-    btn2.classList.add('change')
-    btn3.classList.remove('change')
-    btn4.classList.remove('change')
-    btn5.classList.remove('change')
+function btn2_f() {
+  btn1.classList.remove("change");
+  btn2.classList.add("change");
+  btn3.classList.remove("change");
+  btn4.classList.remove("change");
+  btn5.classList.remove("change");
+  localStorage.setItem("rank", "2")
+
 }
 
-function btn3_f(){
-    btn1.classList.remove('change')
-    btn2.classList.remove('change')
-    btn3.classList.add('change')
-    btn4.classList.remove('change')
-    btn5.classList.remove('change')
+function btn3_f() {
+  btn1.classList.remove("change");
+  btn2.classList.remove("change");
+  btn3.classList.add("change");
+  btn4.classList.remove("change");
+  btn5.classList.remove("change");
+  localStorage.setItem("rank", "3")
 }
 
-function btn4_f(){
-    btn1.classList.remove('change')
-    btn2.classList.remove('change')
-    btn3.classList.remove('change')
-    btn4.classList.add('change')
-    btn5.classList.remove('change')
+function btn4_f() {
+  btn1.classList.remove("change");
+  btn2.classList.remove("change");
+  btn3.classList.remove("change");
+  btn4.classList.add("change");
+  btn5.classList.remove("change");
+  localStorage.setItem("rank", "4")
 }
 
-function btn5_f(){
-    btn1.classList.remove('change')
-    btn2.classList.remove('change')
-    btn3.classList.remove('change')
-    btn4.classList.remove('change')
-    btn5.classList.add('change')
+function btn5_f() {
+  btn1.classList.remove("change");
+  btn2.classList.remove("change");
+  btn3.classList.remove("change");
+  btn4.classList.remove("change");
+  btn5.classList.add("change");
+
+  localStorage.setItem("rank", "5")
 }
+
+let data = localStorage.getItem("rank");
+response.innerHTML = data
