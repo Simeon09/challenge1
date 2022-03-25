@@ -1,8 +1,18 @@
 body {
   background-color: #121417;
+  -webkit-transition: background 0.5sec linear;
+  transition: background 0.5sec linear;
 }
 
-.rating {
+body.light {
+  background-color: #252d37;
+}
+
+body.light div {
+  background-color: #121417;
+}
+
+body .rating {
   background-color: #252d37;
   display: -ms-grid;
   display: grid;
@@ -13,16 +23,16 @@ body {
 }
 
 @media screen and (max-width: 310px) {
-  .rating {
+  body .rating {
     width: 250px;
   }
 }
 
-.rating .change {
-  background-color: red;
+body .rating .change {
+  background-color: #7c8798;
 }
 
-.rating .icon {
+body .rating .icon {
   background-color: #4b4b4e;
   margin-top: 20px;
   border-radius: 50%;
@@ -32,7 +42,7 @@ body {
   text-align: center;
 }
 
-.rating h3 {
+body .rating h3 {
   font-family: Overpass;
   font-size: 20px;
   color: white;
@@ -41,7 +51,7 @@ body {
   font-weight: 700;
 }
 
-.rating p {
+body .rating p {
   font-family: Overpass;
   font-size: 15px;
   color: #7c8798;
@@ -51,7 +61,7 @@ body {
   margin-top: 0px;
 }
 
-.rating span {
+body .rating span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,7 +71,7 @@ body {
   margin-right: 20px;
 }
 
-.rating span button {
+body .rating span button {
   background-color: #4b4b4e;
   width: 37px;
   padding: 10px;
@@ -69,11 +79,15 @@ body {
   border-radius: 450%;
   outline: none;
   border: none;
-  color: #7c8798;
+  color: white;
   font-family: Overpass;
 }
 
-.rating .btn {
+body .rating span button:hover {
+  background-color: #fb7413;
+}
+
+body .rating .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,7 +95,7 @@ body {
   padding-top: 20px;
 }
 
-.rating .btn button {
+body .rating .btn button {
   background-color: #fb7413;
   outline: none;
   border: none;
@@ -100,12 +114,12 @@ body {
   font-weight: 400;
 }
 
-.rating .btn button:hover {
+body .rating .btn button:hover {
   background-color: white;
   color: #fb7413;
 }
 
-.thankYou {
+body .thankYou {
   width: 300px;
   background-color: #252d37;
   text-align: center;
@@ -117,12 +131,12 @@ body {
 }
 
 @media screen and (max-width: 310px) {
-  .thankYou {
+  body .thankYou {
     width: 250px;
   }
 }
 
-.thankYou p:last-child {
+body .thankYou p:last-child {
   color: #7c8798;
   font-family: Overpass;
   font-weight: 400;
@@ -132,7 +146,7 @@ body {
   font-size: 15px;
 }
 
-.thankYou .select {
+body .thankYou .select {
   background-color: #4b4b4e;
   width: 180px;
   display: inline-block;
@@ -145,10 +159,66 @@ body {
   font-size: 15px;
 }
 
-.thankYou h2 {
+body .thankYou h2 {
   color: white;
   margin: 0px;
   font-family: Overpass;
   font-weight: 700;
+}
+
+body .switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .switch .label {
+  width: 60px;
+  height: 30px;
+  background-color: #4b4b4e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2px;
+  border-radius: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+body .switch .ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  border-radius: 20px;
+  -webkit-transition: -webkit-transform 0.3s linear;
+  transition: -webkit-transform 0.3s linear;
+  transition: transform 0.3s linear;
+  transition: transform 0.3s linear, -webkit-transform 0.3s linear;
+}
+
+body .switch .checkbox:checked + .label .ball {
+  background-color: #252d37;
+  -webkit-transform: translateX(37px);
+          transform: translateX(37px);
+}
+
+body .switch .checkbox {
+  opacity: 0;
+  position: absolute;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,136 +1,201 @@
-body{
-   background-color:  hsl(216, 12%, 8%);
-}
-.rating{
-background-color:  hsl(213, 19%, 18%);
-display: grid;
-//position: relative;
- //top: 30px;
-border-radius: 20px;
-//  margin-left: 1vw;
-//  margin-right: 1vw;
-width: 300px;
-margin: auto;
-margin-top: 170px;
-@media screen and (max-width:310px){
+body {
+  background-color: hsl(216, 12%, 8%);
+  // .light{
+  //   background-color:hsl(0, 0%, 100%);
+  // }
+  transition:background 0.5sec linear;
+  &.light{
+    background-color:hsl(213, 19%, 18%);
+    
+  }
+  &.light div{
+    background-color:hsl(216, 12%, 8%);
+  }
+ 
+  .rating {
+    background-color: hsl(213, 19%, 18%);
+    display: grid;
+    //position: relative;
+  //top: 30px;
+  border-radius: 20px;
+  //  margin-left: 1vw;
+  //  margin-right: 1vw;
+  width: 300px;
+  margin: auto;
+  margin-top: 170px;
+  @media screen and (max-width: 310px) {
     width: 250px;
-}
-.change{
-    background-color: red;
-}
-.icon{
-    background-color:   hsl(240, 2%, 30%);
+  }
+  
+  
+  .change {
+    background-color: hsl(216, 12%, 54%);
+  }
+  .icon {
+    background-color: hsl(240, 2%, 30%);
     margin-top: 20px;
     border-radius: 50%;
     width: 20px;
     padding: 5px;
     margin-left: 20px;
     text-align: center;
-}
-h3{
+  }
+  h3 {
     font-family: Overpass;
-    font-size:20px;
+    font-size: 20px;
     color: hsl(0, 0%, 100%);
     margin-left: 20px;
     margin-right: 20px;
     font-weight: 700;
-    
-    
-}
-p{
+  }
+  p {
     font-family: Overpass;
-    font-size:15px;
+    font-size: 15px;
     color: hsl(216, 12%, 54%);
     margin-left: 20px;
     margin-right: 20px;
     padding-top: 0px;
     margin-top: 0px;
-    
-}
-span{
+  }
+  span {
     display: flex;
     justify-content: space-around;
-    button{
-        background-color: hsl(240, 2%, 30%);
-        width: 37px;
-        padding: 10px;
-        text-align: center;
-        border-radius: 450%;
-        outline: none;
-        border: none;
-        color: hsl(216, 12%, 54%);
-        font-family: Overpass;
+    button {
+      background-color: hsl(240, 2%, 30%);
+      width: 37px;
+      padding: 10px;
+      text-align: center;
+      border-radius: 450%;
+      outline: none;
+      border: none;
+      color: hsl(0, 0%, 100%);
+      font-family: Overpass;
+      &:hover{
+        background-color: hsl(25, 97%, 53%);
+      }
     }
     margin-left: 15px;
     margin-right: 20px;
-}
-.btn{
+  }
+  .btn {
     display: flex;
     justify-self: center;
-padding-top: 20px;
-
-    button{
-        background-color: hsl(25, 97%, 53%);
-        outline: none;
-        border: none;
-        display: flex;
-        justify-self: center;
-        padding-left: 100px;
-        padding-right: 100px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-        border-radius: 30px;
-        color:hsl(0, 0%, 100%) ;
-        font-family: Overpass;
-        font-weight: 400;
-       &:hover{
-           background-color:hsl(0, 0%, 100%) ; 
-           color:hsl(25, 97%, 53%); ;
-       }
-    }
-}
-}
-.thankYou{
-    width: 300px;
-    background-color:  hsl(213, 19%, 18%);
-    text-align: center;
-    margin: auto;
-    margin-top: 170px;
-    border-radius: 20px;
     padding-top: 20px;
-    padding-bottom: 20px;
-    @media screen and (max-width:310px){
-        width: 250px;
-    }
-    p:last-child{
-        color: hsl(216, 12%, 54%); 
-        font-family: Overpass;
-        font-weight: 400;
-        padding-left: 10px;
-        padding-right: 10px;
-        text-align: center;
-        font-size: 15px;
-    }
-   .select{
-       background-color:hsl(240, 2%, 30%); 
-      
-      width: 180px;
-      display: inline-block;
-     // justify-content: center;
-      margin-top: 20px;
-      //margin: auto;
+
+    button {
+      background-color: hsl(25, 97%, 53%);
+      outline: none;
+      border: none;
+      display: flex;
+      justify-self: center;
+      padding-left: 100px;
+      padding-right: 100px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      border-radius: 30px;
+      color: hsl(0, 0%, 100%);
       font-family: Overpass;
-      color:hsl(25, 97%, 53%); 
-      padding-top: 3px;
-      padding-bottom: 3px;
-      border-radius: 20px;
-      font-size: 15px;
-   }
-   h2{
-       color:hsl(0, 0%, 100%);
-       margin: 0px;
-       font-family: Overpass;
-       font-weight: 700;
-   }
+      font-weight: 400;
+      &:hover {
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(25, 97%, 53%);
+      }
+    }
+  }
 }
+.thankYou {
+  width: 300px;
+  background-color: hsl(213, 19%, 18%);
+  text-align: center;
+  margin: auto;
+  margin-top: 170px;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @media screen and (max-width: 310px) {
+    width: 250px;
+  }
+  p:last-child {
+    color: hsl(216, 12%, 54%);
+    font-family: Overpass;
+    font-weight: 400;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 15px;
+  }
+  .select {
+    background-color: hsl(240, 2%, 30%);
+    
+    width: 180px;
+    display: inline-block;
+    // justify-content: center;
+    margin-top: 20px;
+    //margin: auto;
+    font-family: Overpass;
+    color: hsl(25, 97%, 53%);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 20px;
+    font-size: 15px;
+  }
+  h2 {
+    color: hsl(0, 0%, 100%);
+    margin: 0px;
+    font-family: Overpass;
+    font-weight: 700;
+  }
+}
+.switch {
+  // width: 100px;
+  // height: 30px;
+  // background-color:hsl(217, 12%, 63%);
+  // border-radius: 30px;
+  // padding-top: 10px;
+  // text-align: center;
+  //display: flex;
+  // display: flex;
+  // justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  display: grid;
+  justify-content: flex-end;
+
+ 
+  
+  .label {
+    width: 60px;
+    height: 30px;
+    background-color:hsl(240, 2%, 30%);
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+    // padding-left: 5px;
+    // padding-right: 5px;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    
+  }
+  .ball{
+      width: 20px;
+      height: 20px;
+      background-color: white;
+      position: absolute;
+      border-radius: 20px;
+      //   top: 2px;
+      //   left: 2px;
+      transition: transform 0.3s linear; 
+    }
+    .checkbox:checked + .label .ball{
+      background-color: hsl(213, 19%, 18%);
+      transform: translateX(37px);
+  } 
+  .checkbox{
+      opacity: 0;
+      position: absolute;
+  }
+}
+
+    }

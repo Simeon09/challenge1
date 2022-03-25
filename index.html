@@ -12,16 +12,27 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Montserrat&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,400&family=Overpass:wght@200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,700&family=Source+Serif+Pro:wght@600&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="index2.html">
+    <link rel="stylesheet" href="index2.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <span class="switch">
+        <input type="checkbox" class="checkbox" id="checkbox"/>
+        <label for="checkbox" class="label">
+            <i class="fa-solid fa-sun"></i>
+            <i class="fa-solid fa-moon"></i>
+            <div class="ball"></div>
+        </label>
+    </span>
     <div class="rating">
         <div class="icon"><img src="images/icon-star.svg" alt="star"></div>
         <h3 id="resp">How did we do ?</h3>
         <p>please let us know how we did what your support request.All feedback is appreciated to help us improve our
             offering!</p>
-        <span id="select" >
+        <span id="select">
             <button id="btn1" onclick="btn1_f()">1</button>
             <button id="btn2" onclick="btn2_f()">2</button>
             <button id="btn3" onclick="btn3_f()">3</button>
@@ -33,7 +44,7 @@
             <button type="submit" id="submit"><a href="index2.html">Submit</a></button>
         </div>
     </div>
-<script src="sass/script/main.js" async defer></script>
+    <script src="sass/script/main.js" async defer></script>
 </body>
 
 </html>

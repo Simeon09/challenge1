@@ -19,7 +19,12 @@ for(b in buttons) {
     }
 }
 */
-
+document.addEventListener('change', myfunction);
+function myfunction(){
+    document.body.classList.toggle('light')
+  }
+  // checkbox.addEventListener("change", ()=> document.body.classList.toggle("light"));
+  
 function btn1_f() {
   btn1.classList.add("change");
   btn2.classList.remove("change");
@@ -69,3 +74,13 @@ function btn5_f() {
 
 let data = localStorage.getItem("rank");
 response.innerHTML = data
+
+// const checkbox = document.getElementById('checkbox');
+// checkbox.addEventListener('change', ()=>{ 
+//   document.body.classList.toggle('light');
+//  });
+// check.addEventListener('change'. function(){
+// });
+// document.body.classList.toggle('light')
+
+
