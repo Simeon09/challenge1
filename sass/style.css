@@ -196,7 +196,7 @@ body .switch {
 
 body .switch .label {
   width: 60px;
-  height: 30px;
+  height: 20px;
   background-color: #4b4b4e;
   display: -webkit-box;
   display: -ms-flexbox;
