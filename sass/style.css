@@ -97,7 +97,15 @@ body .rating .btn {
   padding-top: 20px;
 }
 
-body .rating .btn button {
+body .rating .btn a {
+  text-decoration: none;
+  font-family: Overpass;
+  font-weight: 700;
+  font-size: 15px;
+  color: white;
+}
+
+body .rating .btn a button {
   background-color: #fb7413;
   outline: none;
   border: none;
@@ -116,20 +124,9 @@ body .rating .btn button {
   font-weight: 400;
 }
 
-body .rating .btn button:hover {
+body .rating .btn a button:hover {
   background-color: white;
-}
-
-body .rating .btn button:hover a {
   color: #fb7413;
-}
-
-body .rating .btn button a {
-  text-decoration: none;
-  font-family: Overpass;
-  font-weight: 700;
-  font-size: 15px;
-  color: white;
 }
 
 body .thankYou {
@@ -195,7 +192,7 @@ body .switch {
 }
 
 body .switch .label {
-  width: 60px;
+  width: 56px;
   height: 20px;
   background-color: #4b4b4e;
   display: -webkit-box;
@@ -233,5 +230,13 @@ body .switch .checkbox:checked + .label .ball {
 body .switch .checkbox {
   opacity: 0;
   position: absolute;
+}
+
+.body2.light {
+  background-color: white;
+}
+
+.body2.light div {
+  background-color: #57585b;
 }
 /*# sourceMappingURL=style.css.map */

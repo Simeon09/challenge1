@@ -1,4 +1,4 @@
-body {
+body{
   background-color: hsl(216, 12%, 8%);
   // .light{
   //   background-color:hsl(0, 0%, 100%);
@@ -84,7 +84,13 @@ body {
     display: flex;
     justify-self: center;
     padding-top: 20px;
-
+    a{
+      
+      text-decoration: none;
+      font-family: Overpass;
+      font-weight: 700;
+      font-size: 15px;
+      color:hsl(0, 0%, 100%); 
     button {
       background-color: hsl(25, 97%, 53%);
       outline: none;
@@ -102,17 +108,10 @@ body {
       font-weight: 400;
       &:hover {
         background-color: hsl(0, 0%, 100%);
-        a{
-          color: hsl(25, 97%, 53%);
-        }
+        color: hsl(25, 97%, 53%);;
+        
 
       }
-      a{
-        text-decoration: none;
-        font-family: Overpass;
-        font-weight: 700;
-        font-size: 15px;
-        color:hsl(0, 0%, 100%); 
        
       }
     }
@@ -179,7 +178,7 @@ body {
  
   
   .label {
-    width: 60px;
+    width: 56px;
     height: 20px;
     background-color:hsl(240, 2%, 30%);
     display: flex;
@@ -212,4 +211,13 @@ body {
   }
 }
 
+    }
+    .body2{
+      &.light{
+        background-color:white;
+        
+      }
+      &.light div{
+        background-color:hsl(225, 2%, 35%);
+      }
     }

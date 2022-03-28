@@ -22,6 +22,8 @@ for(b in buttons) {
 document.addEventListener('change', myfunction);
 function myfunction(){
     document.body.classList.toggle('light')
+    b = document.body.className
+    localStorage.setItem('colors', b)
   }
   // checkbox.addEventListener("change", ()=> document.body.classList.toggle("light"));
   
@@ -83,4 +85,10 @@ response.innerHTML = data
 // });
 // document.body.classList.toggle('light')
 
+  
+  bo = document.querySelector(".body2")
+  col =  localStorage.getItem('colors')
+  bo.classList.add(col)
+  localStorage.clear()
 
+  
