@@ -91,4 +91,18 @@ response.innerHTML = data
   bo.classList.add(col)
   localStorage.clear()
 
-  
+  //  function checkforblank() {
+  // let b1 = document.getElementById('btn1').click;
+  // let b2 = document.getElementById('btn2').click;
+  // let b3 = document.getElementById('btn3').click;
+  // let b4 = document.getElementById('btn4').click;
+  // let b5 = document.getElementById('btn5').click;
+  //  if ((b1=="")&&(b2=="")){
+  //      alert ('please rate us');
+  //      return false;
+  //  {
+     //   else
+  //     return false;
+  //   }
+  //   return true
+  // }
